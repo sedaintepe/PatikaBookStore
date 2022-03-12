@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "doOJyZKDsdUzqiQtuoYU2fNfJrXEWnwZzFGDJyeU4u597wSn0WhyL450wH0k2cPb2eAP4Hp9Y0aax3rSh7pNsQ==",
+  "dgSpecHash": "EZxo+QlNUV7TzOOhDkNfRG3PLqbOgyia0tfx90XeTR6N/ifTJ3+1dbbebmgmk5yJE5yQ7iENNud6ls870xBTFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\PatikaBookStoreWebapi\\PatikaBookStoreWebapi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",

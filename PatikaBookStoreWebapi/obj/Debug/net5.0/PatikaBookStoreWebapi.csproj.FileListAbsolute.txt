@@ -31,3 +31,4 @@ C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\obj\Debug\net5.0\PatikaBookStoreWebapi.pdb
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\obj\Debug\net5.0\PatikaBookStoreWebapi.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\obj\Debug\net5.0\ref\PatikaBookStoreWebapi.dll
+C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\FluentValidation.dll
