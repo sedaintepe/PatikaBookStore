@@ -41,6 +41,8 @@ namespace PatikaBookStoreWebapi.AddControllers
             {
                 GetBookDetailQuery query = new GetBookDetailQuery(_context);
                 query.BookId = id;
+                GetBookDetailQueryValidator validations=new GetBookDetailQueryValidator();
+                validations.ValidateAndThrow(query);
                 result = query.Handle();
             }
             catch (Exception ex)
@@ -86,6 +88,8 @@ namespace PatikaBookStoreWebapi.AddControllers
                 UpdateBookCommand command = new UpdateBookCommand(_context);
                 command.BookId = id;
                 command.Model = updateBook;
+                UpdateBookCommandValidator validations=new UpdateBookCommandValidator();
+                validations.ValidateAndThrow(command);
                 command.Handle();
 
             }
