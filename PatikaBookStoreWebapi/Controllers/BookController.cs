@@ -37,27 +37,26 @@ namespace PatikaBookStoreWebapi.AddControllers
         {
 
             BookDetailViewModel result;
-            try
-            {
+        //    try   //try catchleri error mesajlarını olşturduğumuz middleware kullanarak hata mesajlarını bad request ekledik artık try catchlere crud da gerek kalmadı.
+         //   {
                 GetBookDetailQuery query = new GetBookDetailQuery(_context);
                 query.BookId = id;
                 GetBookDetailQueryValidator validations=new GetBookDetailQueryValidator();
                 validations.ValidateAndThrow(query);
                 result = query.Handle();
-            }
-            catch (Exception ex)
-            {
+         //   }
+            // catch (Exception ex)
+            // {
 
-                return BadRequest(ex.Message);
-            }
+            //     return BadRequest(ex.Message);
+            // }
             return Ok(result);
         }
         [HttpPost]
         public IActionResult AddBook([FromBody] CreateBook newbook)
         {
             CreateBookCommand command = new CreateBookCommand(_context);
-            try
-            {
+         
                 command.Model = newbook;
 
                 //Handle etmeden once validatorlar doğru mu çalışıyor bakalım:))
@@ -72,19 +71,13 @@ namespace PatikaBookStoreWebapi.AddControllers
                 // }
                 // else
                 //  command.Handle();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-
-            }
+           
             return Ok();
         }
         [HttpPut("{id}")]
         public IActionResult UpdateBook(int id, [FromBody] UpdateViewModel updateBook)
         {
-            try
-            {
+            
                 UpdateBookCommand command = new UpdateBookCommand(_context);
                 command.BookId = id;
                 command.Model = updateBook;
@@ -92,11 +85,11 @@ namespace PatikaBookStoreWebapi.AddControllers
                 validations.ValidateAndThrow(command);
                 command.Handle();
 
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            // }
+            // catch (Exception ex)
+            // {
+            //     return BadRequest(ex.Message);
+            // }
 
 
             return Ok();
@@ -104,19 +97,12 @@ namespace PatikaBookStoreWebapi.AddControllers
         [HttpDelete("{id}")]
         public IActionResult DeleteBook(int id)
         {
-            try
-            {
+           
                 DeleteBookCommand command = new DeleteBookCommand(_context);
                 command.BookId = id;
                 DeleteBookCommandValidator validations=new DeleteBookCommandValidator();
                 validations.ValidateAndThrow(command);
                 command.Handle();
-            }
-            catch (Exception ex)
-            {
-
-                return BadRequest(ex.Message);
-            }
 
             return Ok();
         }

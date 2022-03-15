@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using PatikaBookStoreWebapi.DbOperations;
+using PatikaBookStoreWebapi.Middlewares;
 
 namespace PatikaBookStoreWebapi
 {
@@ -52,6 +53,8 @@ namespace PatikaBookStoreWebapi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCustomExceptionMiddle();//middleware
 
             app.UseEndpoints(endpoints =>
             {
