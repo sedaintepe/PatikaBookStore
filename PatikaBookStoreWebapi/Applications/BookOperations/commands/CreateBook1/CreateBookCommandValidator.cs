@@ -1,7 +1,7 @@
 using System;
 using FluentValidation;
 
-namespace PatikaBookStoreWebapi.BookOperations.CreateBook1
+namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1
 {
     public class CreateBookVCommandValidator : AbstractValidator<CreateBookCommand>
     {

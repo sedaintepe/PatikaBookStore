@@ -1,7 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PatikaBookStoreWebapi{
+namespace PatikaBookStoreWebapi.Entities
+{
 
 public class Book
 {   

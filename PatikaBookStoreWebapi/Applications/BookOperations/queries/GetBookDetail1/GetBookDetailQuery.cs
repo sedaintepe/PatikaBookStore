@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PatikaBookStoreWebapi.BookOperations.GetBookDetail1{
+namespace PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBookDetail1{
  public class GetBookDetailQuery{
      private readonly BookStoreDbContext _dbcontext;
      public int BookId{get;set;}

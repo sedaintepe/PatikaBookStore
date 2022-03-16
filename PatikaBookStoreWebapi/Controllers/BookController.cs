@@ -1,16 +1,19 @@
 using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
-using PatikaBookStoreWebapi.BookOperations.CreateBook1;
-using PatikaBookStoreWebapi.BookOperations.DeleteBook;
-using PatikaBookStoreWebapi.BookOperations.GetBookDetail1;
-using PatikaBookStoreWebapi.BookOperations.GetBooks;
-using PatikaBookStoreWebapi.BookOperations.UpdateBook;
+using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
+using PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook;
+using PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook;
+
+using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBookDetail1;
+using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBooks;
+
 using PatikaBookStoreWebapi.DbOperations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static PatikaBookStoreWebapi.BookOperations.CreateBook1.CreateBookCommand;
+using static PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1.CreateBookCommand;
+
 
 namespace PatikaBookStoreWebapi.AddControllers
 {

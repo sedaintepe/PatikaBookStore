@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace PatikaBookStoreWebapi.BookOperations.DeleteBook
+namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook
 {
     public class DeleteBookCommandValidator : AbstractValidator<DeleteBookCommand>
     {

@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using PatikaBookStoreWebapi.BookOperations.GetBooks;
+using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBooks;
 using PatikaBookStoreWebapi.DbOperations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PatikaBookStoreWebapi.BookOperations.DeleteBook{
+namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook{
  public class DeleteBookCommand{
      public int BookId{get;set;}
      private readonly BookStoreDbContext _dbcontext;

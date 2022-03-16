@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PatikaBookStoreWebapi.BookOperations.UpdateBook{
+namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook{
  public class UpdateBookCommand{
      public int BookId{get;set;}
      public UpdateViewModel Model{get;set;}

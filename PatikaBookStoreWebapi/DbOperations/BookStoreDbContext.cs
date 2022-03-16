@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using PatikaBookStoreWebapi.Entities;
 
 namespace PatikaBookStoreWebapi.DbOperations{
     public class BookStoreDbContext:DbContext{
@@ -6,6 +7,7 @@ namespace PatikaBookStoreWebapi.DbOperations{
 
       }
       public DbSet<Book> Books{get;set;}
+     public DbSet<Genre> Genres{get;set;}
 
 
     }

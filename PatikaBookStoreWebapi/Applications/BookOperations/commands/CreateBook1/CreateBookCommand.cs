@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using PatikaBookStoreWebapi.BookOperations.GetBooks;
+using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBooks;
 using PatikaBookStoreWebapi.DbOperations;
+using PatikaBookStoreWebapi.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PatikaBookStoreWebapi.BookOperations.CreateBook1{
+namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1{
  public class CreateBookCommand{
      public CreateBook Model{get;set;}
      private readonly BookStoreDbContext _dbcontext;

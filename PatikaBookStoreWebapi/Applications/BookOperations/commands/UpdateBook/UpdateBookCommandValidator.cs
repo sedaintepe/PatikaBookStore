@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace PatikaBookStoreWebapi.BookOperations.UpdateBook
+namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook
 {
     public class UpdateBookCommandValidator : AbstractValidator<UpdateBookCommand>
     {
