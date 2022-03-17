@@ -36,6 +36,7 @@ namespace PatikaBookStoreWebapi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PatikaBookStoreWebapi", Version = "v1" });
             });
+            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddDbContext<BookStoreDbContext>(options=>options.UseInMemoryDatabase(databaseName:"BookStore"));
             services.AddSingleton<ILoggerServices, DbLogger>();//prog. build olunca Calıssın addsingleton
             //hatalı olan seyi tek bir yerde gosteriyor error mesajlarını tek bir yerde toplayıp daha kolay düzeltme sağlandı. Dbloggera implememnt etti
