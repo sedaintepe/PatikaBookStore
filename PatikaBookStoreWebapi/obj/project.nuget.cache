@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/DCHNeHr5S5ya/bbFT+CKlpVSrpIUBFb1tRW6CUTcIHD6JSalfrtwnWa5RdfKNCz5+y6H9BxIJRv9BJYPmzJNg==",
+  "dgSpecHash": "wFdShTH3hUDMJmGjZTxYuBmDGMYxCZykJI+gjkNgoNwkvBmqJLn9HMLzcuTj+l3T1LXz3LMsDADH3pORoqiGfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\PatikaBookStoreWebapi\\PatikaBookStoreWebapi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
