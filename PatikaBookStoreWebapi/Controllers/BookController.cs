@@ -67,7 +67,7 @@ namespace PatikaBookStoreWebapi.Controllers
                 command.Model = newbook;
 
                 //Handle etmeden once validatorlar doğru mu çalışıyor bakalım:))
-                CreateBookVCommandValidator validations = new CreateBookVCommandValidator();
+                CreateBookCommandValidator validations = new CreateBookCommandValidator();
                 validations.ValidateAndThrow(command);
                 command.Handle();
                 // ValidationResult result=validations.Validate(command);//error mesajlarına bak.

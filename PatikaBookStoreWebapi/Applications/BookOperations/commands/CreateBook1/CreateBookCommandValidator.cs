@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1
 {
-    public class CreateBookVCommandValidator : AbstractValidator<CreateBookCommand>
+    public class CreateBookCommandValidator : AbstractValidator<CreateBookCommand>
     {
-        public CreateBookVCommandValidator()
+        public CreateBookCommandValidator()
         {
             RuleFor(command => command.Model.GenreId).GreaterThan(0);
             RuleFor(command => command.Model.PageCount).GreaterThan(0);
