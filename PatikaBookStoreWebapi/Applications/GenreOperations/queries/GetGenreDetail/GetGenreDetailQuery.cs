@@ -28,6 +28,6 @@ namespace PatikaBookStoreWebapi.Applications.GenreOperations.queries.GetGenreDet
     }
     public class GenreDetailViewModel{
         public int Id { get; set; }
-        public string GenreName { get; set; }
+        public string Name { get; set; }  //maplerken dto aynı isimde olmasına dikkat et
     }
 }

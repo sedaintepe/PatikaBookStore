@@ -1,5 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PatikaBookStoreWebapi.Common;
 using PatikaBookStoreWebapi.DbOperations;
 using System;
@@ -17,7 +18,7 @@ namespace PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBookDetai
             _mapper = mapper;
         }
         public BookDetailViewModel Handle(){
-         var book=_dbcontext.Books.Where(book=>book.Id==BookId).SingleOrDefault();
+         var book=_dbcontext.Books.Include(x=>x.Genre).Where(book=>book.Id==BookId).SingleOrDefault();
          if(book is null) throw new InvalidOperationException("Kitap Bulunamadı!");
          BookDetailViewModel vm= _mapper.Map<BookDetailViewModel>(book);//new BookDetailViewModel();
         //  vm.Title=book.Title;

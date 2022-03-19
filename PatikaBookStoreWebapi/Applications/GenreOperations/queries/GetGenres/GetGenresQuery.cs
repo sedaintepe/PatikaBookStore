@@ -17,7 +17,7 @@ namespace PatikaBookStoreWebapi.Applications.GenreOperations.queries.GetGenres{
         }
 
         public  List<GetGenreViewModel> Handle(){
-            var genres=_context.Genres.Where(x=>x.IsActive).OrderBy(con=>con.Id);
+            var genres=_context.Genres.Where(x=>x.IsActive).OrderBy(x=>x.Id);
             List<GetGenreViewModel> returnObj=_mapper.Map<List<GetGenreViewModel>>(genres);
             return returnObj;
 
@@ -25,6 +25,6 @@ namespace PatikaBookStoreWebapi.Applications.GenreOperations.queries.GetGenres{
     }
     public class GetGenreViewModel{
         public int Id { get; set; }
-        public string GenreName { get; set; }
+        public string Name { get; set; }
     }
 }
