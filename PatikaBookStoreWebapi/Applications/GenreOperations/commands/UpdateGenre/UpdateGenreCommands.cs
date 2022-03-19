@@ -20,7 +20,7 @@ namespace PatikaBookStoreWebapi.Applications.GenreOperations.commands.UpdateGenr
             if(_context.Genres.Any(x=>x.Name.ToLower()==Model.Name.ToLower()&& x.Id!=GenreId))
             throw new InvalidOperationException("Aynı isimli kitap türü zaten var!");
 
-            genre.Name=Model.Name.Trim()==default? Model.Name:genre.Name; //update olarak girilmemişse bir isim zaten var olan ismi donsun
+            genre.Name=string.IsNullOrEmpty(Model.Name.Trim())? genre.Name:Model.Name; //update olarak girilmemişse bir isim zaten var olan ismi donsun
             genre.IsActive=Model.IsActive;
             _context.SaveChanges();
         }

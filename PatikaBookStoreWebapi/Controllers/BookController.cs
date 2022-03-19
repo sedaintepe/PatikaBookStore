@@ -1,3 +1,4 @@
+using AutoMapper;
 using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +16,7 @@ using System.Linq;
 using static PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1.CreateBookCommand;
 
 
-namespace PatikaBookStoreWebapi.AddControllers
+namespace PatikaBookStoreWebapi.Controllers
 {
 
     [ApiController]
@@ -23,15 +24,18 @@ namespace PatikaBookStoreWebapi.AddControllers
     public class BookController : ControllerBase
     {
         private readonly BookStoreDbContext _context;
-        public BookController(BookStoreDbContext context)
+        private readonly IMapper _mapper;
+
+        public BookController(BookStoreDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public IActionResult GetBooks()
         {
-            GetBooksQuery query = new GetBooksQuery(_context);
+            GetBooksQuery query = new GetBooksQuery(_context,_mapper);
             var result = query.Handle();
             return Ok(result);
         }
@@ -42,7 +46,7 @@ namespace PatikaBookStoreWebapi.AddControllers
             BookDetailViewModel result;
         //    try   //try catchleri error mesajlarını olşturduğumuz middleware kullanarak hata mesajlarını bad request ekledik artık try catchlere crud da gerek kalmadı.
          //   {
-                GetBookDetailQuery query = new GetBookDetailQuery(_context);
+                GetBookDetailQuery query = new GetBookDetailQuery(_context,_mapper);
                 query.BookId = id;
                 GetBookDetailQueryValidator validations=new GetBookDetailQueryValidator();
                 validations.ValidateAndThrow(query);
@@ -58,7 +62,7 @@ namespace PatikaBookStoreWebapi.AddControllers
         [HttpPost]
         public IActionResult AddBook([FromBody] CreateBook newbook)
         {
-            CreateBookCommand command = new CreateBookCommand(_context);
+            CreateBookCommand command = new CreateBookCommand(_context,_mapper);
          
                 command.Model = newbook;
 
