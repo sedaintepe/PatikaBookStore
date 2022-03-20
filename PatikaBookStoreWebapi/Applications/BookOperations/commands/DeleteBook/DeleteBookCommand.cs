@@ -8,8 +8,8 @@ using System.Linq;
 namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook{
  public class DeleteBookCommand{
      public int BookId{get;set;}
-     private readonly BookStoreDbContext _dbcontext;
-     public DeleteBookCommand(BookStoreDbContext dbContext){
+     private readonly IBookStoreDbContext _dbcontext;
+     public DeleteBookCommand(IBookStoreDbContext dbContext){
          _dbcontext=dbContext;
      }
      public void Handle(){

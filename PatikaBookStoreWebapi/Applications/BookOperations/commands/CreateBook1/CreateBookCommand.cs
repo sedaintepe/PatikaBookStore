@@ -10,9 +10,9 @@ using System.Linq;
 namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1{
  public class CreateBookCommand{
      public CreateBook Model{get;set;}
-     private readonly BookStoreDbContext _dbcontext;
+     private readonly IBookStoreDbContext _dbcontext;
      private readonly IMapper _mapper;
-        public CreateBookCommand(BookStoreDbContext dbContext, IMapper mapper)
+        public CreateBookCommand(IBookStoreDbContext dbContext, IMapper mapper)
         {
             _dbcontext = dbContext;
             _mapper = mapper;

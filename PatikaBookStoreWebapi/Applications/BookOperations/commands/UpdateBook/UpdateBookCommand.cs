@@ -9,8 +9,8 @@ namespace PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook{
  public class UpdateBookCommand{
      public int BookId{get;set;}
      public UpdateViewModel Model{get;set;}
-     private readonly BookStoreDbContext _dbcontext;
-   public UpdateBookCommand(BookStoreDbContext dbContext){
+     private readonly IBookStoreDbContext _dbcontext;
+   public UpdateBookCommand(IBookStoreDbContext dbContext){
            _dbcontext=dbContext;
    }
    public void Handle(){

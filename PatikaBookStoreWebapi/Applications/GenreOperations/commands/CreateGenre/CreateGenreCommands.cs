@@ -6,9 +6,9 @@ using PatikaBookStoreWebapi.Entities;
 namespace PatikaBookStoreWebapi.Applications.GenreOperations.commands.CreateGenre{
     public class CreateGenreCommands{
         public CreateGenreModel _model{get;set;}
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
 
-        public CreateGenreCommands(BookStoreDbContext context)
+        public CreateGenreCommands(IBookStoreDbContext context)
         {
             _context = context;
         }

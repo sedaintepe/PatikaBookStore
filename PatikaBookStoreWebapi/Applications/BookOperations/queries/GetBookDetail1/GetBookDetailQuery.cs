@@ -9,10 +9,10 @@ using System.Linq;
 
 namespace PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBookDetail1{
  public class GetBookDetailQuery{
-     private readonly BookStoreDbContext _dbcontext;
+     private readonly IBookStoreDbContext _dbcontext;
       private readonly IMapper _mapper;
      public int BookId{get;set;}
-        public GetBookDetailQuery(BookStoreDbContext dbContext, IMapper mapper)
+        public GetBookDetailQuery(IBookStoreDbContext dbContext, IMapper mapper)
         {
             _dbcontext = dbContext;
             _mapper = mapper;

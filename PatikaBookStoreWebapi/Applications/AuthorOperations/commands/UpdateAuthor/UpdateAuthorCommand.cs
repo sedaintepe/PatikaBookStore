@@ -8,8 +8,8 @@ namespace PatikaBookStoreWebapi.Applications.AuthorOperations.commands.UpdateAut
     public class UpdateAuthorCommand{
         public int AuthorId { get; set; }
         public AuthorUpdateViewModel Model { get; set; }
-        private readonly BookStoreDbContext _context;
-        public UpdateAuthorCommand(BookStoreDbContext context)
+        private readonly IBookStoreDbContext _context;
+        public UpdateAuthorCommand(IBookStoreDbContext context)
         {
             _context = context;
         }

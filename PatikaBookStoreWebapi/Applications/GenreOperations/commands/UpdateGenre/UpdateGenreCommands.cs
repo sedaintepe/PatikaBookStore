@@ -8,8 +8,8 @@ namespace PatikaBookStoreWebapi.Applications.GenreOperations.commands.UpdateGenr
   public class UpdateGenreCommands{
       public int GenreId { get; set; }
       public UpdateGenreModel Model { get; set; }
-      private readonly BookStoreDbContext _context;
-        public UpdateGenreCommands(BookStoreDbContext context)
+      private readonly IBookStoreDbContext _context;
+        public UpdateGenreCommands(IBookStoreDbContext context)
         {
             _context = context;
         }
