@@ -6,11 +6,15 @@ C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\PatikaBookStoreWebapi.runtimeconfig.dev.json
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\PatikaBookStoreWebapi.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\PatikaBookStoreWebapi.pdb
+C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -31,7 +35,3 @@ C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\obj\Debug\net5.0\PatikaBookStoreWebapi.pdb
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\obj\Debug\net5.0\PatikaBookStoreWebapi.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\obj\Debug\net5.0\ref\PatikaBookStoreWebapi.dll
-C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\FluentValidation.dll
-C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\PatikaBookStoreWebapi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
