@@ -125,3 +125,4 @@ C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStore
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\obj\Debug\net5.0\PatikaBookStoreWebapi.UnitTests.pdb
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\obj\Debug\net5.0\PatikaBookStoreWebapi.UnitTests.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\obj\Debug\net5.0\ref\PatikaBookStoreWebapi.UnitTests.dll
+c:\Users\LENOVO\Desktop\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\System.Linq.Dynamic.dll
