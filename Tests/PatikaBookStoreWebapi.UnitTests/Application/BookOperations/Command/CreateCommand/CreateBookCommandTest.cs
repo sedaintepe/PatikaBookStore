@@ -36,7 +36,7 @@ namespace Application.BookOperations.Command.CreateCommand{
           
        }
          [Fact] //happypaddıng
-       public void WhenValidInOutsAreGiven_Book_ShouldBeCreated()
+       public void WhenValidInputsAreGiven_Book_ShouldBeCreated()
        {
              CreateBookCommand command=new CreateBookCommand(_context,_mapper);
             CreateBook model=new CreateBook()
@@ -53,8 +53,6 @@ namespace Application.BookOperations.Command.CreateCommand{
             book.PageCount.Should().Be(model.PageCount);
             book.PublishDate.Should().Be(model.PublishDate);
             book.GenreId.Should().Be(model.GenreId);
-
-
 
        }
         
