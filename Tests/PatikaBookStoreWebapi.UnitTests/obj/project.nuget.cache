@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U0shyuUd2SrM4mumFdVrcA/lEzVSwsZoVONwsTHrJUwtoCWZdEemNjgNtFQ8tyXvJcemvbAbppfeRAA0XqWYYA==",
+  "dgSpecHash": "tae5ghQ5qbc3kvwiT6zHahEKKmIGFKN6Zr+hyvpFXuOoJlrkeSka+1IS6uAe/E0UZYj3Twg+MJXnku+3szBvOQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\PatikaBookStoreWebapi.UnitTests.csproj",
+  "projectFilePath": "c:\\Users\\LENOVO\\Desktop\\Klasorler\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\PatikaBookStoreWebapi.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

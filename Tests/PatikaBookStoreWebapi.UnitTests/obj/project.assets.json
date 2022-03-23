@@ -7344,11 +7344,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\PatikaBookStoreWebapi.UnitTests.csproj",
+      "projectUniqueName": "c:\\Users\\LENOVO\\Desktop\\Klasorler\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\PatikaBookStoreWebapi.UnitTests.csproj",
       "projectName": "PatikaBookStoreWebapi.UnitTests",
-      "projectPath": "c:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\PatikaBookStoreWebapi.UnitTests.csproj",
+      "projectPath": "c:\\Users\\LENOVO\\Desktop\\Klasorler\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\PatikaBookStoreWebapi.UnitTests.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\obj\\",
+      "outputPath": "c:\\Users\\LENOVO\\Desktop\\Klasorler\\.netCoreCalismalar\\PatikaBookStore\\Tests\\PatikaBookStoreWebapi.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
@@ -7370,8 +7370,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\PatikaBookStoreWebapi\\PatikaBookStoreWebapi.csproj": {
-              "projectPath": "c:\\Users\\LENOVO\\Desktop\\.netCoreCalismalar\\PatikaBookStore\\PatikaBookStoreWebapi\\PatikaBookStoreWebapi.csproj"
+            "c:\\Users\\LENOVO\\Desktop\\Klasorler\\.netCoreCalismalar\\PatikaBookStore\\PatikaBookStoreWebapi\\PatikaBookStoreWebapi.csproj": {
+              "projectPath": "c:\\Users\\LENOVO\\Desktop\\Klasorler\\.netCoreCalismalar\\PatikaBookStore\\PatikaBookStoreWebapi\\PatikaBookStoreWebapi.csproj"
             }
           }
         }
