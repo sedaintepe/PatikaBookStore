@@ -13,7 +13,7 @@ namespace Application.AuthorOperations.Commands.UpdateAuthor
         [InlineData("",1)]
        
 
-        public void WhenInvalidInputIsAreGiven_Validator_ShouldBeReturnErorrs(string name, int bookId)
+        public void WhenInvalidInputIsAreGiven_Validator_ShouldBeReturnErrorrs(string name, int bookId)
         {
             //arrange
             UpdateAuthorCommand command = new UpdateAuthorCommand(null);
