@@ -16,7 +16,7 @@ namespace TestSetup
             //Commits
             Context.AddBooks();
             Context.AddGenres();
-            Context.AddAuthors();
+            Context.AddAuthors();            
             Context.SaveChanges();
 
             //Mapping
