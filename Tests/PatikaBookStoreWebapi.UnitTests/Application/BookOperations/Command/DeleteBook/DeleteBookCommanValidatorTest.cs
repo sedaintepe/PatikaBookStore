@@ -1,15 +1,11 @@
-using System;
-using AutoMapper;
 using FluentAssertions;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
 using PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook;
-using PatikaBookStoreWebapi.DbOperations;
-using PatikaBookStoreWebapi.Entities;
 using TestSetup;
 using Xunit;
 
 
-namespace Application.BookOperations.Command.DeleteBook{
+namespace Application.BookOperations.Command.DeleteBook
+{
     public class DeleteBookCommanValidatorTest:IClassFixture<CommonTestFicture>{
         
         [Theory]

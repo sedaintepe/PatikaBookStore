@@ -2,7 +2,6 @@ using System;
 using System.Linq;
 using AutoMapper;
 using FluentAssertions;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
 using PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook;
 using PatikaBookStoreWebapi.DbOperations;
 using PatikaBookStoreWebapi.Entities;
@@ -10,7 +9,8 @@ using TestSetup;
 using Xunit;
 
 
-namespace Application.BookOperations.Command.UpdateBook{
+namespace Application.BookOperations.Command.UpdateBook
+{
     public class UpdateBookCommandTest:IClassFixture<CommonTestFicture>{
         private readonly BookStoreDbContext _context;
        private readonly IMapper _mapper;

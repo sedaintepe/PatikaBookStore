@@ -1,15 +1,11 @@
-using System;
-using AutoMapper;
 using FluentAssertions;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
 using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBookDetail1;
-using PatikaBookStoreWebapi.DbOperations;
-using PatikaBookStoreWebapi.Entities;
 using TestSetup;
 using Xunit;
 
 
-namespace Application.BookOperations.Queries.GetDetailBooks{
+namespace Application.BookOperations.Queries.GetDetailBooks
+{
     public class GetBooksDetailQueryValidationTest:IClassFixture<CommonTestFicture>{
         [Theory]
         [InlineData(0)]

@@ -1,13 +1,7 @@
-using System;
-using AutoMapper;
 using FluentAssertions;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
 using PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook;
-using PatikaBookStoreWebapi.DbOperations;
-using PatikaBookStoreWebapi.Entities;
 using TestSetup;
 using Xunit;
-using static PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1.CreateBookCommand;
 
 namespace Application.BookOperations.Command.UpdateBook
 {

@@ -1,15 +1,11 @@
 using System;
-using AutoMapper;
 using FluentAssertions;
 using PatikaBookStoreWebapi.Applications.AuthorOperations.commands.CreateAuthor;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
-using PatikaBookStoreWebapi.DbOperations;
-using PatikaBookStoreWebapi.Entities;
 using TestSetup;
 using Xunit;
-using static PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1.CreateBookCommand;
 
-namespace Application.AuthorOperations.Command.AuthorCommand{
+namespace Application.AuthorOperations.Command.AuthorCommand
+{
     public class CreateAuthorCommandValidationCommandTest:IClassFixture<CommonTestFicture>{
         [Theory]
         [InlineData("Harry","Steve",0)]
