@@ -9,7 +9,7 @@ using TestSetup;
 using Xunit;
 
 
-namespace Application.AuthorOperations.Command.UpdateAuthor
+namespace Application.AuthorOperations.Commands.UpdateAuthor
 {
     public class UpdateAuthorCommandTest:IClassFixture<CommonTestFicture>{
         private readonly BookStoreDbContext _context;

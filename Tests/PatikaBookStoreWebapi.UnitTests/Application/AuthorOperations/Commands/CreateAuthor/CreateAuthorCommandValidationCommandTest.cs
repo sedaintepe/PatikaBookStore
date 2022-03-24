@@ -4,7 +4,7 @@ using PatikaBookStoreWebapi.Applications.AuthorOperations.commands.CreateAuthor;
 using TestSetup;
 using Xunit;
 
-namespace Application.AuthorOperations.Command.AuthorCommand
+namespace Application.AuthorOperations.Commands.CreateAuthor
 {
     public class CreateAuthorCommandValidationCommandTest:IClassFixture<CommonTestFicture>{
         [Theory]
@@ -21,7 +21,7 @@ namespace Application.AuthorOperations.Command.AuthorCommand
        public void WhenInvalidInputIsAreGiven_Validator_ShouldBeReturnErorrs(string Name,string surname,int bookId){
            //arrange
            CreateAuthorCommand command=new CreateAuthorCommand(null,null);
-           command.Model= new CreateAuthor(){
+           command.Model= new PatikaBookStoreWebapi.Applications.AuthorOperations.commands.CreateAuthor.CreateAuthor(){
                Name=Name,
                Surname=surname,
                BirthDate=DateTime.Now.Date.AddYears(-30),
@@ -38,7 +38,7 @@ namespace Application.AuthorOperations.Command.AuthorCommand
        public void WhenDateTimeEqualNowIsGiven_Validator_ShouldBeReturnErro()
        {
            CreateAuthorCommand command=new CreateAuthorCommand(null,null);
-           command.Model= new CreateAuthor(){
+           command.Model= new PatikaBookStoreWebapi.Applications.AuthorOperations.commands.CreateAuthor.CreateAuthor(){
                Name="Harry",
                Surname="Steve",
                BirthDate=DateTime.Now.Date,
@@ -54,7 +54,7 @@ namespace Application.AuthorOperations.Command.AuthorCommand
        public void WhenValidInputsAreGiven_Validator_ShouldNotBeReturnError()
        {
           CreateAuthorCommand command=new CreateAuthorCommand(null,null);
-            command.Model= new CreateAuthor(){
+            command.Model= new PatikaBookStoreWebapi.Applications.AuthorOperations.commands.CreateAuthor.CreateAuthor(){
                Name="Harry",
                Surname="Steve",
                BirthDate=DateTime.Now.Date.AddYears(-30),

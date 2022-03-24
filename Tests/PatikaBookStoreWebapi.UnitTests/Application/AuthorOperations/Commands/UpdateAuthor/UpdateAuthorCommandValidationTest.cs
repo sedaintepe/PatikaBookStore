@@ -3,7 +3,7 @@ using PatikaBookStoreWebapi.Applications.AuthorOperations.commands.UpdateAuthor;
 using TestSetup;
 using Xunit;
 
-namespace Application.AuthorOperations.Command.UpdateAuthor
+namespace Application.AuthorOperations.Commands.UpdateAuthor
 {
     public class UpdateAuthorCommandValidationTest:IClassFixture<CommonTestFicture>
     {

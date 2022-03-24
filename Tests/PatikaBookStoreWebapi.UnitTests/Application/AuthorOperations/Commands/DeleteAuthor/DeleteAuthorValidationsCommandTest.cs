@@ -4,7 +4,7 @@ using TestSetup;
 using Xunit;
 
 
-namespace Application.AuthorOperations.Command.DeleteAuthor
+namespace Application.AuthorOperations.Commands.DeleteAuthor
 {
     public class DeleteAuthorValidationsCommandTest:IClassFixture<CommonTestFicture>{
         
