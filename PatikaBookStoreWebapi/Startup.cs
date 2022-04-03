@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using PatikaBookStoreWebapi.DbOperations;
 using PatikaBookStoreWebapi.Middlewares;
@@ -31,7 +34,23 @@ namespace PatikaBookStoreWebapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+             //jwt semasını verdik bos sek,lde aut.
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt=>
+            {
+                opt.TokenValidationParameters=new TokenValidationParameters
+                {
+                     ValidateAudience=true,  //kimler ulaşsın
+                     ValidateIssuer=true,   
+                     ValidateLifetime=true,
+                     ValidateIssuerSigningKey=true,
+                     ValidIssuer=Configuration["Token:Issuer"],
+                     ValidAudience=Configuration["Token:Audience"],
+                     IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Token:SecurityKey"])),
+                     ClockSkew=TimeSpan.Zero  //token üreten ve kullanacak olan time da aynı anda sonlanması için. Token bizim belirlediğimiz sürede calıscak.
+                };
 
+            });
+          
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -54,7 +73,7 @@ namespace PatikaBookStoreWebapi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PatikaBookStoreWebapi v1"));
             }
-
+             app.UseAuthentication();//servislerde bu sıra onemli once authentication olmalı
             app.UseHttpsRedirection();
 
             app.UseRouting();

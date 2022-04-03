@@ -254,3 +254,10 @@ c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\Patik
 c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\obj\Debug\net5.0\PatikaBookStoreWebapi.UnitTests.pdb
 c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\obj\Debug\net5.0\PatikaBookStoreWebapi.UnitTests.genruntimeconfig.cache
 c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\obj\Debug\net5.0\ref\PatikaBookStoreWebapi.UnitTests.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\LENOVO\Desktop\Klasorler\.netCoreCalismalar\PatikaBookStore\Tests\PatikaBookStoreWebapi.UnitTests\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
