@@ -1,6 +1,7 @@
 using AutoMapper;
 using FluentValidation;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
 using PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook;
@@ -17,7 +18,8 @@ using static PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBo
 
 
 namespace PatikaBookStoreWebapi.Controllers
-{
+{ 
+    [Authorize] //tokenla koruma
 
     [ApiController]
     [Route("[controller]s")]
