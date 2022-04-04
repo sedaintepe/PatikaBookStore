@@ -1,49 +1,26 @@
 using AutoMapper;
-<<<<<<< HEAD
+
 
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using PatikaBookStoreWebapi.Applications.UserOperations.Commands;
+using PatikaBookStoreWebapi.Applications.UserOperations.Commands.CreateToken;
 using PatikaBookStoreWebapi.Applications.UserOperations.Commands.CreateUser;
 using PatikaBookStoreWebapi.DbOperations;
-
-
-namespace PatikaBookStoreWebapi.Controllers
-{
-
-    [ApiController]
-    [Route("[controller]s")]
-=======
-using AutoMapper.Configuration;
-using FluentValidation;
-using FluentValidation.Results;
-using Microsoft.AspNetCore.Mvc;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.DeleteBook;
-using PatikaBookStoreWebapi.Applications.BookOperations.commands.UpdateBook;
-
-using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBookDetail1;
-using PatikaBookStoreWebapi.Applications.BookOperations.queries.GetBooks;
-
-using PatikaBookStoreWebapi.DbOperations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using static PatikaBookStoreWebapi.Applications.BookOperations.commands.CreateBook1.CreateBookCommand;
-
+using PatikaBookStoreWebapi.TokenOperations.Models;
+using static PatikaBookStoreWebapi.Applications.UserOperations.Commands.CreateToken.CreateTokenCommand;
 
 namespace PatikaBookStoreWebapi.Controllers{
 
        [ApiController]
        [Route("[controller]s")]
->>>>>>> 0e50dfe4e4f3e49d76269674914869a26e65933f
+
     public class UserController : ControllerBase
     {
         private readonly IBookStoreDbContext _context;
         private readonly IMapper _mapper;
 
-<<<<<<< HEAD
         readonly IConfiguration _configuration; //mic. extention con
         public UserController(IBookStoreDbContext context, IMapper mapper, IConfiguration configuration)
         {
@@ -62,15 +39,16 @@ namespace PatikaBookStoreWebapi.Controllers{
             command.Handle();
             return Ok();
         }
+        [HttpPost("connect/token")]
+        public ActionResult<Token> CreateToken([FromBody] CreateTokenModel login){
+            CreateTokenCommand command=new CreateTokenCommand(_context,_mapper,_configuration);
+            command.Model=login;
+            var token=command.Handle();
+            return token;
 
-
-=======
-        readonly IConfiguration _configuration;
-        public UserController(IBookStoreDbContext context, IMapper mapper)
-        {
-            _context = context;
-            _mapper = mapper;
         }
->>>>>>> 0e50dfe4e4f3e49d76269674914869a26e65933f
+
+
+
     }
 }

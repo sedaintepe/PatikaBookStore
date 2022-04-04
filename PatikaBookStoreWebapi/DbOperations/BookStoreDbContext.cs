@@ -7,9 +7,9 @@ namespace PatikaBookStoreWebapi.DbOperations{
 
       }
       public DbSet<Book> Books{get;set;}
-      public DbSet<Genre> Genres{get;set;}
+     public DbSet<Genre> Genres{get;set;}
       public DbSet<Author> Authors{get;set;}
-    public DbSet<User> Users { get;set; }
+    public DbSet<User> Users { get; set; }
 
         public override int SaveChanges() //dbcontexttede, Ibookstoreda da oldugu için overrirde ederiz,startup.cs de inject etmemeiz lazım
         {

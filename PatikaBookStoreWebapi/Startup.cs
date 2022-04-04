@@ -34,23 +34,22 @@ namespace PatikaBookStoreWebapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-             //jwt semasını verdik bos sek,lde aut.
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt=>
             {
                 opt.TokenValidationParameters=new TokenValidationParameters
                 {
-                     ValidateAudience=true,  //kimler ulaşsın
-                     ValidateIssuer=true,   
-                     ValidateLifetime=true,
-                     ValidateIssuerSigningKey=true,
-                     ValidIssuer=Configuration["Token:Issuer"],
-                     ValidAudience=Configuration["Token:Audience"],
-                     IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Token:SecurityKey"])),
-                     ClockSkew=TimeSpan.Zero  //token üreten ve kullanacak olan time da aynı anda sonlanması için. Token bizim belirlediğimiz sürede calıscak.
-                };
+                    ValidateAudience=true,
+                    ValidateIssuer=true,
+                    ValidateLifetime=true,
+                    ValidateIssuerSigningKey=true,
+                    ValidIssuer=Configuration["Token:Issuer"],
+                    ValidAudience=Configuration["Token:Audience"],
+                    IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Token:SecurityKey"])),
+                    ClockSkew=TimeSpan.Zero
 
+                };
             });
-          
+           
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -73,7 +72,7 @@ namespace PatikaBookStoreWebapi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PatikaBookStoreWebapi v1"));
             }
-             app.UseAuthentication();//servislerde bu sıra onemli once authentication olmalı
+            app.UseAuthentication();
             app.UseHttpsRedirection();
 
             app.UseRouting();
